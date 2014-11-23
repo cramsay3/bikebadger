@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_start"
+        android:title="@string/pref_title_start_immediately"
+        android:summary="@string/pref_description_start_immediately"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="pref_load_last_file"
+        android:title="Automatically Load Last File"
+        android:summary="Automatically opens the last Action Waypoints file"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="pref_badger_proximity"
+        android:title="Trigger Proximity"
+        android:summary="@string/pref_badger_proximity_list_summary"
+        android:defaultValue="200"
+        android:entries="@array/pref_badger_proximity_list_titles"
+        android:entryValues="@array/pref_badger_proximity_list_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+</PreferenceScreen>

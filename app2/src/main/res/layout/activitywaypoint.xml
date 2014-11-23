@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center|top"
+    android:stretchColumns="1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/waypoint_type_arrays"
+            android:prompt="@string/waypoint_prompt"
+              />
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+             android:id="@+id/wpactivity_imgMarker"
+            android:contentDescription="my icon" />
+
+</TableRow>
+
+    <TableRow android:layout_width="wrap_content"
+        android:id="@+id/wpactivity_argumentTableRow"
+          android:layout_height="wrap_content">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target Avg:"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/wpactivity_txtArg"
+              />
+
+        <EditText
+            android:id="@+id/waypoint_ArgEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp" />
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+             android:layout_marginRight="5dp"
+            android:layout_span="1"
+            android:id="@+id/wpactivity_SelectBtn" />
+
+        </TableRow>
+
+        <SeekBar
+            android:id="@+id/volbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="60px"
+            />
+    <View style="@style/Divider" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Submit"
+            />
+
+    </TableLayout>

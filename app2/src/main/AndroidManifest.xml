@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="us.theramsays.bikebadger.app2"
+    android:theme="@android:style/Theme.Holo.Light"
+    android:versionCode="1"
+    android:versionName="1.0.1"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- uses-permission android:name="android.permission.SEND_SMS" -->
+    <uses-permission android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS" />
+    <!--
+         The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="bikebadger.RideActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="bikebadger.MapsActivity2"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_maps_activity2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bikebadger.RideActivity" />
+        </activity>
+
+
+        <receiver
+            android:name="bikebadger.TrackingLocationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="us.theramsays.bikebadger.ACTION_LOCATION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="bikebadger.TimerServiceReceiver" >
+            <intent-filter>
+                <action android:name="us.theramsays.bikebadger.app2.TimerService" >
+            </action>
+            </intent-filter>
+        </receiver>
+
+        <!--
+           The main Timer Service for Badger feature
+           Returns every second so the UI can update but may need to rethink
+           Was originally tied to Location updates but that can take up to minutes to refresh if signal is weak
+       -->
+        <service android:name="bikebadger.TimerService" />
+
+        <activity
+            android:name="bikebadger.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bikebadger.RideActivity" />
+        </activity>
+
+        <activity
+            android:name="bikebadger.CreditsActivity"
+            android:label="@string/title_activity_credits" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bikebadger.RideActivity" />
+        </activity>
+
+        <activity
+            android:name="bikebadger.WaypointActivity"
+            android:label="@string/title_activity_waypoint"
+            android:theme="@android:style/Theme.Holo.Dialog"  >
+        </activity>
+
+        <activity
+            android:name="bikebadger.PlaylistsActivity"
+            android:label="@string/title_activity_playlists"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+
+
+        <!--
+            Setup for the Google map...
+        -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDHq1FbNvewQU-aWtatiZB7n8H7Runo6gs" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

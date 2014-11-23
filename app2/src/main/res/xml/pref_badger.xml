@@ -1,0 +1,71 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    <EditTextPreference
+        android:key="pref_target_value"
+        android:title="@string/pref_target_value_title"
+        android:defaultValue="@string/pref_default_target_value"
+        android:selectAllOnFocus="true"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <CheckBoxPreference
+        android:key="pref_badger"
+        android:title="Badger Me"
+        android:summary="@string/pref_badger_summary"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:dependency="pref_badger"
+        android:key="prefs_speak_speed_interval"
+        android:title="@string/pref_title_speak_speed_interval"
+        android:defaultValue="60"
+        android:entries="@array/pref_speak_speed_interval_titles"
+        android:entryValues="@array/pref_speak_speed_interval_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <CheckBoxPreference
+        android:dependency="pref_badger"
+        android:key="pref_badger_include_avg_speed"
+        android:title="Include Average Speed"
+        android:summary="@string/pref_badger_include_avg_speed_summary"
+        android:defaultValue="true" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:dependency="pref_badger"
+        android:key="pref_badger_level"
+        android:title="@string/pref_title_badgering_level"
+        android:defaultValue="0"
+        android:entries="@array/pref_badger_level_list_titles"
+        android:entryValues="@array/pref_badger_level_list_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null" />
+
+    <EditTextPreference
+        android:dependency="pref_badger"
+        android:key="pref_badger_behind_phrase"
+        android:title="@string/pref_badger_behind_phrase_title"
+        android:defaultValue="@string/pref_badger_behind_phrase_value"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <EditTextPreference
+        android:dependency="pref_badger"
+        android:key="pref_badger_ahead_phrase"
+        android:title="@string/pref_badger_ahead_phrase_title"
+        android:defaultValue="@string/pref_badger_ahead_phrase_value"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+</PreferenceScreen>

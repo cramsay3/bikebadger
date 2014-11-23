@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\pre-dexed\licensed\debug\jdom-2.0.5-6cf9a99cd2322a928b3d10246625b11d84eb50d9.jar"
+        jar="D:\Android\AndroidStudioProjects\BikeBadger1\app2\libs\jdom-2.0.5.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2001db51c131e555bafdb77fc52af6a9408c505e"/>
+    <item
+        dex="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\pre-dexed\licensed\debug\classes-9cfb77375bc2410642eed24dc020ec8aa0b82bc0.jar"
+        jar="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\pre-dexed\licensed\debug\support-annotations-20.0.0-35fdd9dfdefd099efe08bb8f3263ee379a7a385d.jar"
+        jar="D:\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\pre-dexed\licensed\debug\internal_impl-20.0.0-b533e1293d154a337e8e3033e2f66945dfe89889.jar"
+        jar="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\pre-dexed\licensed\debug\classes-56e26aabf0ecd6cbf0f9dfce734bb4ead6315e1f.jar"
+        jar="D:\Android\AndroidStudioProjects\BikeBadger1\app2\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
+
+</pre-dex-items>

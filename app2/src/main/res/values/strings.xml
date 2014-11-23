@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bike Badger</string>
+    <string name="started">Started:</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="altitude">Altitude:</string>
+    <string name="elapsed_time">Time:</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="gps_enabled">GPS Enabled</string>
+    <string name="gps_disabled">GPS Disabled</string>
+    <string name="new_run">Map View</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_activity2">Map</string>
+    <string name="prompt_below_target_speed">Go faster!</string>
+    <string name="prompt_average_speed_is_on_target">Good job!</string>
+    <string name="current_location_title">Current Location</string>
+    <string name="map_type_title">Map Type</string>
+    <string name="title_activity_credits">Credits Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="credits_heading">Bike Badger Notes</string>
+    <string name="credits_content">credit_content</string>
+    <string name="txt_distance_kilometer">kilometer</string>
+    <string name="txt_distance_kilometers">kilometers</string>
+    <string name="txt_distance_mile">mile</string>
+    <string name="txt_distance_miles">miles</string>
+    <string name="txt_distance_meter">meter</string>
+    <string name="txt_distance_meters">meters</string>
+    <string name="txt_distance_km">km</string>
+    <string name="txt_distance_mi">mi</string>
+    <string name="txt_distance_m">m</string>
+    <string name="txt_dimension_time">time</string>
+    <string name="txt_dimension_distance">distance</string>
+    <string name="txt_dimension_speed">speed</string>
+    <string name="txt_dimension_pace">pace</string>
+    <string name="txt_dimension_heartrate">heartrate</string>
+    <string name="txt_dimension_heartratezone">heartrate zone</string>
+    <string name="userpass_username_txt">Username</string>
+    <string name="userpass_password_txt">Password</string>
+    <string name="userpass_showpass_box">Show password</string>
+    <string name="txt_elapsed_h">h</string>
+    <string name="txt_elapsed_m">m</string>
+    <string name="txt_elapsed_min">min</string>
+    <string name="txt_elapsed_s">s</string>
+    <string name="txt_heartrate_bpm">bpm</string>
+    <string name="sex">Sex</string>
+    <string name="pref_badger_behind_phrase_title">Behind Phrase</string>
+    <string name="pref_badger_behind_phrase_value">You are behind</string>
+    <string name="pref_badger_ahead_phrase_title">Ahead Phrase</string>
+    <string name="pref_badger_ahead_phrase_value">You are ahead</string>
+    <string name="title_activity_waypoint">Action Waypoint Editor</string>
+    <string name="waypoint_prompt">Choose a waypoint type</string>
+    <string name="empty_directory">Empty Directory</string>
+    <string name="storage_removed">Storage was removed or unmounted.</string>
+    <string name="choose_file">Select a file</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="chooser_title">GPX Chooser</string>
+    <string name="title_activity_playlists">Playlists</string>
+
+    <string name="package_name_google_gms">com.google.android.gms</string>
+    <string name="package_name_tts">android.speech.tts.engine</string>
+    <string name="package_name_google_map">com.google.android.apps.maps</string>
+    <string name="package_name_google_music">com.google.android.music</string>
+    <string name="package_name_strava">com.strava</string>
+    <string name="package_name_tasker">net.dinglisch.android.taskerm</string>
+    <string name="package_name_poweramp">com.maxmpz.audioplayer</string>
+    <string name="package_name_bikebadger_free">us.theramsays.bikebadger.app</string>
+    <string name="package_name_bikebadger_paid">us.theramsays.bikebadger.app2</string>
+    <string name="pdf_show_online_dialog_title">Online View</string>
+    <string name="pdf_show_online_dialog_question">Show online?</string>
+    <string name="pdf_show_online_dialog_button_no">No</string>
+    <string name="pdf_show_online_dialog_button_yes">Yes</string>
+    <string name="pdf_show_local_progress_title">Loading</string>
+    <string name="pdf_show_local_progress_content">pdf_show_local_progress_title</string>
+
+    <string name="button_dimiss">Dismiss</string>
+    <string name="version_prefix">Version</string>
+    <string name="app_version_notes">Bike Badger Version Notes</string>
+
+    <string-array name="waypoint_type_arrays">
+        <item>START</item>
+        <item>PROMPT</item>
+        <item>SPEED</item>
+        <item>PLAYLIST</item>
+        <item>STRAVA REC</item>
+        <item>STRAVA STOP</item>
+        <item>VOLUME</item>
+        <item>MUTE</item>
+        <item>TASKER</item>
+    </string-array>
+
+    <string name="check_license">Check license</string>
+    <string name="checking_license">Checking license...</string>
+    <string name="dont_allow">Don\'t allow the user access</string>
+    <string name="allow">Allow the user access</string>
+    <string name="application_error">Application error: %1$s</string>
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Application not licensed</string>
+    <string name="unlicensed_dialog_body">This application is not licensed. Please purchase it from Android Market.</string>
+    <string name="buy_button">Buy app</string>
+    <string name="quit_button">Exit</string>
+
+</resources>

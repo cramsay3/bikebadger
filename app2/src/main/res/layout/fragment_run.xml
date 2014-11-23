@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:showDividers="middle">
+
+<TableRow android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/run_messagebarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_weight="90"
+        />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="My arrow"
+        android:layout_weight="10"
+        />
+</TableRow>
+    </TableLayout>
+
+    <TextView android:id="@+id/run_speedTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="--.-"
+        android:textSize="64sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingRight="5sp"
+        android:text="Speed"
+        android:textSize="16sp"
+        />
+
+    <TextView android:id="@+id/run_avgSpeedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="--.-"
+        android:textSize="64sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingRight="5sp"
+        android:text="Average Speed"
+        android:textSize="16sp"
+        />
+
+          <TextView android:id="@+id/run_targetSpeedTextView"
+            android:layout_width="fill_parent"
+              android:gravity="center"
+              android:layout_height="wrap_content"
+            android:text="--.-"
+            android:textSize="64sp"
+            />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingRight="5sp"
+        android:text="Target"
+        android:textSize="16sp"
+        />
+
+    <Button android:id="@+id/target_editButton"
+        android:layout_width="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="(Edit...)"
+        android:hint="Edit"
+        android:layout_gravity="left"
+        android:enabled="true"
+         android:gravity="right"
+        android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+        android:showDividers="middle">
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+             android:text="@string/started"
+            android:textSize="16sp"
+            />
+        <TextView android:id="@+id/run_startedTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            />
+
+    </TableRow>
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="5sp"
+            android:text="@string/elapsed_time"
+            android:textSize="16sp"
+            />
+        <TextView android:id="@+id/run_durationTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            />
+
+    </TableRow>
+
+
+    </TableLayout>
+
+    <View style="@style/Spacer" />
+    <View style="@style/Divider" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center">
+
+
+        <TableRow android:gravity="center_horizontal|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton android:id="@+id/run_startButton"
+             android:layout_height="95dp"
+                android:layout_width="95dp"
+            android:background="@drawable/ic_button_white_play" />
+
+            <View android:layout_height="72px"
+                android:layout_width="2px"
+                android:layout_gravity="center_vertical"
+                android:background="#90909090"/>
+
+            <ImageButton android:id="@+id/run_resetButton"
+                android:background="@drawable/btn_reset"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                />
+
+            <View android:layout_height="72px"
+                android:layout_width="2px"
+                android:layout_gravity="center_vertical"
+                android:background="#90909090"/>
+
+           <ImageButton android:id="@+id/run_waypointButton"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+              android:background="@drawable/btn_waypoint"
+            />
+
+        </TableRow>
+   </TableLayout>
+
+    <View style="@style/Divider" />
+
+</LinearLayout>
